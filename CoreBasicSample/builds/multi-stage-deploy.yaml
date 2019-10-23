@@ -147,11 +147,11 @@ stages:
                   TargetFolder: '$(Pipeline.Workspace)/FullSite/www'
 
                 continueOnError: true
-              - task: AzureRmWebAppDeployment@4
-                displayName: 'Azure App Service Deploy: MyWonderfulAppService'
-                inputs:
-                  azureSubscription: 'MyAzureRM'
-                  WebAppName: MyWonderfulAppService
-                  Package: '$(Pipeline.Workspace)/FullSite'
+              # - task: AzureRmWebAppDeployment@4
+              #   displayName: 'Azure App Service Deploy: MyWonderfulAppService'
+              #   inputs:
+              #     azureSubscription: 'MyAzureRM'
+              #     WebAppName: MyWonderfulAppService
+              #     Package: '$(Pipeline.Workspace)/FullSite'
 
 
