@@ -32,6 +32,7 @@ stages:
           displayName: 'dotnet restore'
           inputs:
             command: restore
+            arguments: '--verbosity d'
             projects: '$(solution)'
 
         - task: VSBuild@1
