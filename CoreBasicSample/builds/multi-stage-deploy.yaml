@@ -22,8 +22,8 @@ stages:
           displayName: 'Use .NET Core sdk 2.2.105'
           inputs:
             version: 2.2.105
-
-        - task: GitVersion@4
+            
+        - task: GitVersion@5
           displayName: 'GitVersion '
           inputs:
             BuildNamePrefix: 'MyWonderfulApp Package'
